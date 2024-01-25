@@ -1,0 +1,30 @@
+/*This programme will show the array*/
+#include <stdio.h>
+
+int main()
+{
+    int z;
+    
+    printf("Enter array size : ");
+    scanf("%d",&z);
+    int a[z]; 
+    
+    printf("Enter array : ");
+    
+    for(int x=0;x<z;x++)
+    scanf("%d",&a[x]);
+    
+    int b[z];
+    b[0]=a[0];
+    for(int x=1;x<z;x++)
+    {
+        b[x]=b[x-1]+a[x];
+    }
+    for(int x=0;x<z;x++)
+    {
+        printf(" %d ",b[x]);
+    }
+
+    return 0;
+}
+

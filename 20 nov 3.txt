@@ -1,0 +1,35 @@
+/*Take 3 items price and display the following*/
+
+#include <stdio.h>
+
+int main()
+{
+   int a, b, c, n;
+ 
+printf ("Enter amounts of three items ");
+ scanf ("%d%d%d", &a, &b, &c);
+ int s = a + b + c;
+ 
+if (s > 5000)
+{
+ n = s - (s * .3);
+ printf ("The new discount value is %d\n", n);
+}
+ else if (s > 3000)
+ {
+ n = s - (s * .2);
+ printf ("The new discount value is %d\n", n);
+}
+ else if (s > 2000)
+ {
+ n = s - (s * .1);
+ printf ("The new discount value is %d\n", n);
+ }
+ else
+{ 
+n = s;
+ printf ("The Total amount is %d\n", n); 
+}
+    return 0;
+}
+

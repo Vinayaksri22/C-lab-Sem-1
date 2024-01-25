@@ -1,0 +1,15 @@
+/*This programme gives my personal information*/
+#include <stdio.h>
+
+int main()
+{
+    printf("name\t\t:\tvinayak\n");
+    printf("city\t\t:\tgorakhpur\n");
+    printf("location\t:\tuttar pradesh\n");
+    printf("Pin\t\t:\t234567\n");
+    printf("mobile\t\t:\t1234567891");
+    
+
+    return 0;
+}
+

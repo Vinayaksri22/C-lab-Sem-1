@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("ABC            PQR\n");
+    printf("   abc      abc\n");
+    printf("        SQP\n");
+    printf("   pqr      xyz\n");
+    printf("jkl            rst\n");
+
+    return 0;
+}
+

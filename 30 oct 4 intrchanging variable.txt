@@ -1,0 +1,16 @@
+/*this programme will show taking two integers and interchanging it*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a=2,b=3,c;
+    c=a;
+    a=b;
+    b=c;
+    printf("after swaping a=%d\n",a);
+    printf("after swaping b=%d\n",b);
+
+    return 0;
+}
+

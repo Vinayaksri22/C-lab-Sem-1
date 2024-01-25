@@ -1,0 +1,20 @@
+//Input
+
+/*Taking a real value and round upto 2 decimal places*/
+
+#include <stdio.h>
+
+int main()
+{
+   float var = 14.9672;
+   printf("%.2f", var);
+
+    return 0;
+}
+
+//Output
+
+14.97
+
+...Program finished with exit code 0
+Press ENTER to exit console.

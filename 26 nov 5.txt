@@ -1,0 +1,39 @@
+/*This programme will show the summation*/
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("Enter the value of n ");
+    scanf("%d",&n);
+    float s1=0.0,s2=0.0;
+    int a=1,p=2,q=n-1;
+    while(n>=1)
+    {
+        
+        int f=1;
+        int b=n;
+        while(b>=1)
+        {
+            f=f*b;
+            b--;
+        }
+        s1=s1+(a/(float)f);
+        f=1;
+        
+        while(q>=1)
+        {
+            f=f*q;
+            q--;
+        }
+        
+        s2=s2+(f/(float)p);
+        p=p+2;
+        a=a+2;
+        n=n-2;
+    }
+    float sum=s1+s2;
+    printf("SUM is %f ",sum);
+    
+    return 0;
+}

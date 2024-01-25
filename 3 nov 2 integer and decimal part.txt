@@ -1,0 +1,34 @@
+Input
+-----
+
+/*This programme will show the integer part and decimal part of real value*/
+
+#include <stdio.h>
+
+int main()
+{
+    float num,a;
+    int integer;
+    printf("\n enter a number with 2 decimal digit:");
+    scanf("\n%f",&num);
+    integer=num;
+    a=num-integer;
+    printf("\n number=%f",num);
+    printf("\n integer part=%i",integer);
+    printf("\n decimal part=%f",a);
+
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------
+
+Output
+------
+
+ enter a number with 2 decimal digit:14.29
+
+ number=14.290000
+ integer part=14
+ decimal part=0.290000
+
+...Program finished with exit code 0
+Press ENTER to exit console.

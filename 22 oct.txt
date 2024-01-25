@@ -1,0 +1,14 @@
+/*this programme will show the personal information*/
+
+#include <stdio.h>
+
+int main()
+{
+    printf("name:vinayak\n");
+    printf("roll no.:21052378\n");
+    printf("branch:cse");
+
+    return 0;
+}
+
+

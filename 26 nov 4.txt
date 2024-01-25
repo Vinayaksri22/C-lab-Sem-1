@@ -1,0 +1,39 @@
+/*This programme will show the summation of factorial*/
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("Enter the value of n ");
+    scanf("%d",&n);
+    int a=2,b=3;
+    float s1=0.0,s2=0.0;
+    while(a<=n)
+    {
+        int pd=1;
+        int t=a;
+        
+        while(t>=1)
+        {
+            pd=pd*t;
+            t--;
+        }
+        s1=s1+(a-1.0)/pd;
+        pd=1;
+        int t1=b;
+        while(t1>=1)
+        {
+            pd=pd*t1;
+            t1--;
+        }
+        s2=s2+(pd/(b-1.0));
+        a=a+2;
+        b=b+2;
+    }
+    float sum=s1+s2;
+    printf("SUM is %f ",sum);
+
+    return 0;
+}
+

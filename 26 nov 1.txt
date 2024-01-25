@@ -1,0 +1,18 @@
+/*Display OK upto n times*/
+
+#include <stdio.h>
+
+int main()
+{
+    int no,a=1;
+    printf("Enter the number to print OK\n");
+    scanf("%d",&no);
+    while(a<=no)
+    {
+        printf("%d OK ",a);
+        a++;
+    }
+    
+    return 0;
+}
+

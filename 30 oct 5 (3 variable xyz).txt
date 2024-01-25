@@ -1,0 +1,13 @@
+/*Take three variable and display*/
+#include <stdio.h>
+
+int main()
+{
+    int x=2, y=5, z=3;
+    
+    printf("%d\t%d\t%d\n", x*x, x, x*x*x);
+    printf("\t%d\t\n", y*y);
+    printf("%d\t%d\t%d\n", z*z*z, z, z*z);
+
+    return 0;
+}

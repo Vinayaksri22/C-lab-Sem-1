@@ -1,0 +1,15 @@
+/*This programme will show the formation of Tick*/
+#include <stdio.h>
+
+int main()
+{
+    printf("\t\t\t\t.\v\b\b.\v\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b.\t\t      .\n");
+    printf("\t\t.\t     .\n");
+    printf("\t\t  .\t    .\n");
+    printf("\t\t    .\t   .\n");
+    printf("\t\t      .\t  .\n");
+    printf("\t\t\t.");
+
+    return 0;
+}
+

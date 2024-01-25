@@ -1,0 +1,23 @@
+/*This programme will show no. before decimal and after decimal are same or not*/
+
+#include <stdio.h>
+
+int main()
+{
+    float x,y;
+    int a,b;
+    printf("Enter a decimal no. :");
+    scanf("%F",&x);
+    a=(int)x;
+    printf("%d\n",a);
+    y=x-a;
+    b=y*100;
+    printf("%d\n",b);
+    if(a==b)
+      printf("the no. before decimal and after decimal are same");
+    else
+      printf("the no. before and after decimal are not same");
+
+    return 0;
+}
+

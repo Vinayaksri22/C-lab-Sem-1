@@ -1,0 +1,30 @@
+Input
+-----
+
+/*Question1. This programme will show the average of 3 integers*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c;
+    printf("Enter three numbers:");
+    scanf("%d %d %d", &a, &b, &c);
+    int sum = a+b+c;
+    float avg = sum / 3.0;
+    printf("Sum = %d, Average = %f", sum, avg);
+
+    return 0;
+}
+------------------------------------------------------------------------------------------------
+
+Output
+------
+
+Enter three numbers:2
+3
+5
+Sum = 10, Average = 3.333333
+
+...Program finished with exit code 0
+Press ENTER to exit console.

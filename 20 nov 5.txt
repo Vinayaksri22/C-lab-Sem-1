@@ -1,0 +1,39 @@
+/*Take 3 items price and compute the following*/
+#include <stdio.h>
+
+int main()
+{
+ 
+float a, b, c, s;
+ printf ("Enter Amount of Three Products : ");
+ scanf ("%f%f%f", &a, &b, &c);
+ s = a + b + c;
+ if (s > 5000)
+ {
+ if (a > 2000)
+ a = a - (a * .1);
+ if (b > 2000)
+ b = b - (b * .1);
+ if (c > 2000)
+ c = c - (c * .1);
+ s = a + b + c;
+ s = s - (s * .3);
+ printf ("Final Price after discount=%f",s);
+ }
+ else if (s>3000)
+{ 
+s = s - (s * .2);
+printf("Final Price after discount=%f", s);
+}
+ else if (s>2000)
+{ 
+s = s - (s * .1);
+printf("Final Price after discount=%f",s);
+}
+else
+printf("Net amount is %d",s);
+    
+
+    return 0;
+}
+

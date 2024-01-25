@@ -1,0 +1,38 @@
+/*This programme will display the pattern*/
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("Enter any number : ");
+    scanf("%d",&n);
+    int turn=1,count=n*(n+1)/2;
+    for(int x=n;x>=1;x--)
+    {
+        if(turn>1)
+        {
+            turn=0;
+        }
+        if(turn==0)
+        {
+            for(int y=1;y<=x;y++)
+            {
+                printf(" %d ",(count-x+y));
+            }
+            count=count-x;
+        }
+        else
+        {
+            for(int y=x;y>=1;y--)
+            {
+                printf(" %d ",(count-x+y));
+            }
+            count=count-x;
+        }
+        printf("\n");
+        turn++;
+    }
+
+    return 0;
+}
+

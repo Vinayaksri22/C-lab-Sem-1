@@ -1,0 +1,48 @@
+/*This programme will show the earliest time*/
+
+#include <stdio.h>
+
+int main()
+{
+    
+    /* part 1 */
+    int hour_1, min_2, hour_3, min_4;
+    printf ("Enter the time (hours) in 24 hr format\n");
+    scanf ("%d", &hour_1);
+    printf ("Enter the time (minutes) in 24 hr format\n");
+    scanf ("%d", &min_2);
+
+    /* part 2*/
+    printf ("Enter the time (hours) in 24 hr format\n");
+    scanf ("%d", &hour_3);
+    printf ("Enter the time (minutes) in 24 hr format\n");
+    scanf ("%d", &min_4);
+
+    if (hour_3 > hour_1){
+        printf ("%d : %d is the early time zone\n", hour_1, min_2);
+    }
+    
+    if (hour_1 > hour_3){
+        printf ("%d : %d is in the early time zone\n", hour_3, min_4);
+    }
+
+    if (hour_1 = hour_3){
+        if (min_2 > min_4){
+            printf ("%d : %d is in the early time zone\n", hour_3, min_4);
+        }
+        if (min_4 > min_2){
+            printf ("%d : %d is in the early time zone\n", hour_1, min_2);
+        }
+        else if (min_4 = min_2){
+            printf ("Both the times are in equal time zone\n");
+        }
+    }
+
+    
+
+
+    
+
+
+    return 0;
+}

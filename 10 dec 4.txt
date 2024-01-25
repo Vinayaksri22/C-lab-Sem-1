@@ -1,0 +1,36 @@
+/*This program will show the array first four in reverse and last four asa same*/
+
+#include <stdio.h>
+
+int main()
+{
+    int z;
+    
+    printf("Enter array size ");
+    scanf("%d",&z);
+    int a[z];
+    
+    for(int x=0;x<z;x++)
+     scanf("%d",&a[x]);
+    
+    int i=0;
+    int b[z];
+    for(int x=z/2;x<=z-1;x++)
+    {
+        b[i]=a[x];
+        i++;
+    }
+    for(int x=z/2-1;x>=0;x--)
+    {
+        b[i]=a[x];
+        i++;
+    }
+    printf("\nA\tB");
+    for(int x=0;x<z;x++)
+    {
+        printf("\n%d\t%d",a[x],b[x]);
+    }
+
+    return 0;
+}
+

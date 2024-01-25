@@ -1,0 +1,25 @@
+/*This programme will print the number of series*/
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    float q=0;
+    printf("enter a number ");
+    scanf("%d",&a);
+     float p=a;
+     int c=a; 
+    while(p>0)
+    {
+        printf("1/%d\t",c);
+        c=c-2;
+        q=q+1/p;
+        p=p-2;
+      
+    }
+    printf("\n");
+    printf("%f",q);
+
+    return 0;
+}
+

@@ -1,0 +1,36 @@
+Input
+-----
+
+/*Taking 4 digit number and coverting the following*/
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter the 4 digit number\n");
+    scanf("%d", &a);
+    int d = a % 10;
+    a /= 10;
+    int m = a % 10;
+    a /= 10;
+    int b = a % 10;
+    a /= 10;
+    int c = a % 10;
+    int n = d * 1000 + m * 100 + b * 10 + c;
+    printf("The modified number is %d", n);
+    
+    return 0;
+
+    
+}
+----------------------------------------------------------------------------------------------------
+
+Output
+------
+
+Enter the 4 digit number
+1962
+The modified number is 2691
+
+...Program finished with exit code 0
+Press ENTER to exit console.

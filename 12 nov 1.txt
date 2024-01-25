@@ -1,0 +1,21 @@
+/*This programme will show all the bytes of an integer*/
+
+#include <stdio.h>
+
+int main()
+{
+ int a;
+ printf("Enter no. \n");
+ scanf("%x", &a);
+ int b= (a & 0xFF000000)>>24;
+ int c= (a & 0x00FF0000)>>16;
+ int d= (a & 0x0000FF00)>>8;
+ int e= (a & 0x000000FF);
+ printf("First  : %x \n", b);
+ printf("Second : %x \n", c);
+ printf("Third  : %x \n", d);
+ printf("Fourth : %x", e);
+
+
+    return 0;
+}

@@ -1,0 +1,22 @@
+/*This programme will show the number of digits*/
+
+#include <stdio.h>
+
+int main()
+{
+  int i, n, p;
+
+  printf("Please Enter any number\n");
+  scanf("%d", &i);
+
+  for (p=0; i > 0;i=i/10)
+  {
+     p=p + 1;  
+  }
+
+  printf("Number of Digits = %d", p);
+
+
+    return 0;
+}
+

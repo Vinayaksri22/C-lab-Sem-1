@@ -1,0 +1,39 @@
+Input
+-----
+
+/*Taking 5 digit number and displaying its middle digit and middle 3 digit*/
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter a 5 digit number\n");
+    scanf("%d", &a);
+
+    int c = a / 100;
+    int e = c / 10;
+    int f = c % 10;
+
+    int d = a % 10000;
+    int r = d / 10;
+   
+
+    printf("%d\n", f);
+    printf("%d\n", r);
+
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------
+
+Output
+------
+
+Enter a 5 digit number
+29164
+1
+916
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.

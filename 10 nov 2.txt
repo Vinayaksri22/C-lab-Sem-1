@@ -1,0 +1,33 @@
+//Input
+
+/*This programme wil show the minimum among 3 numbers*/
+#include <stdio.h>
+
+int main()
+{
+    int x, y, z;
+    printf(" Enter three Integer numbers for x, y, z : ");
+    scanf("%d %d %d", &x, &y, &z);
+    if((x < y)&&(x < z))
+    printf("\n x is minimum : %d",x);
+    else
+    {
+    if(y < z)
+    printf("\n y is minimum : %d",y);
+    else
+    printf("\n z is minimum : %d",z);
+    }
+
+    return 0;
+}
+
+//Output
+
+ Enter three Integer numbers for x, y, z : 3
+6
+4
+
+ x is minimum : 3
+
+...Program finished with exit code 0
+Press ENTER to exit console.

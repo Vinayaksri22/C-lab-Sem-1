@@ -1,0 +1,19 @@
+/*This programme will show whether the first and last digit of the number are equal or not*/
+
+#include <stdio.h>
+
+int main()
+{
+int a,b,c;
+printf(" Enter any four digit number : ");
+scanf("%d", &a);
+b=a/100;
+c=a%10;
+if(b==c)
+{ printf("First and last numbers are equal");
+}
+else 
+printf("First and last digit are not equal");
+
+    return 0;
+}

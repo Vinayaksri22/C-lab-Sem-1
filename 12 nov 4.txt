@@ -1,0 +1,25 @@
+/*Take two character a = 0110 0001, b = 1101 0100*/
+#include <stdio.h>
+
+int main()
+{
+ char a,b;
+ printf("Enter two character values \n");
+ scanf("%c %c", &a,&b);
+ int a1= a;
+ int b1= b;
+ int p = (a1&0xf0)>>4;
+ int q = (a1&0xf);
+ int r = (b1&0xf0)>>4;
+ int s = (b1&0xf); 
+ int o = (p<<12)|(r<<8)|(q<<4)|s;
+ printf("a = %x\n", a1);
+ printf("b = %x\n", b1);
+ printf("p = %x\n", p);
+ printf("q = %x\n", q);
+ printf("r = %x\n", r);
+ printf("s = %x\n", s);
+ printf("o = %x\n", o);
+
+    return 0;
+}

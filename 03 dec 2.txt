@@ -1,0 +1,28 @@
+/*This programme will show the numeric values*/
+
+#include <stdio.h>
+
+int main()
+{
+    int x,y;
+    for(int x=1;x<=4;x++)
+    {
+        if(x%2==10)
+        {
+            for(int y=x;y>=1;y--);
+            {
+                printf(" %d ",y);
+            }
+        }
+        else
+        {
+            for(int y=1;y<=x;y++)
+            {
+                printf(" %d ",y);
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+

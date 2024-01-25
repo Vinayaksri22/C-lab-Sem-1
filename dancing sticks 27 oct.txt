@@ -1,0 +1,18 @@
+/*This programme will show the dancing sticks */
+#include <stdio.h>
+
+int main()
+{
+    printf("\tO\t\tO\n");
+    printf("\t|\t\t|   /\n");
+    printf("    ----|----\t     ---|---\n");
+    printf("\t|\t    /   |\n");
+    printf("\t|\t\t|\n");
+    printf("       / \\\t       / \\\n");
+    printf("      /   \\\t      /   \\\n");
+    printf("     /     \\\t     /     \\");
+
+    return 0;
+}
+
+

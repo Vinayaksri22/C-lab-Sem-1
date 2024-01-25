@@ -1,0 +1,15 @@
+/*this programme will display the datatype*/
+#include <stdio.h>
+
+int main()
+{
+    int age = 10;
+    char initial = 'A';
+    float weight = 25.5;
+    printf("age is \t %d\n",age);
+    printf("initial is \t %c\n", initial);
+    printf("weight is \t %f\n",weight);
+    
+    return 0;
+    
+}

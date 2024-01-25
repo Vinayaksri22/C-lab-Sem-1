@@ -1,0 +1,28 @@
+/*This program will show the numbers from 1 to 90*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a, n;
+    printf("Print all numbers till 90 : ");
+    scanf("%d", &n);
+    
+    printf("All numbers from 1 to %d are : \n", n);
+    
+    a=1;
+    while(a<=n)
+    {
+        if(a%1==0)
+        {
+            printf("%d\n", a);
+        }
+        
+        a++;
+        
+    }
+
+    return 0;
+}
+
+

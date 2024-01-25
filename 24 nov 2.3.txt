@@ -1,0 +1,16 @@
+/*This program will show the multiplication table for n = 5*/
+#include <stdio.h>
+
+int main()
+{
+   int a,n;
+   printf("Multiplication Table for any no. : ");
+   scanf("%d",&n);
+   printf("\n");
+   for(a=1;a<=10;a++)
+   {
+     printf("%d X %d = %d \n",n,a,n*a);
+   }
+
+   return 0;
+}

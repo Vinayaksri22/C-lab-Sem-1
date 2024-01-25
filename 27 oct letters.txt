@@ -1,0 +1,9 @@
+/*This will show the letters*/
+#include <stdio.h>
+
+int main()
+{
+    printf("ABCD\vFGH\vpQR\v\b\b\b\b\b\bstuv\v\b\b\b\b\b\b\bwxyz");
+
+    return 0;
+}

@@ -1,0 +1,12 @@
+/*this programme will show the conversion of decimal to octal*/
+#include <stdio.h>
+
+int main()
+{
+        int value=2567;
+    
+    printf("decimal value is: %d\r", value);
+    printf("octal value is: %o\r", value);
+
+    return 0;
+}

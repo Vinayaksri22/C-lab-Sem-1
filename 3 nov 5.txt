@@ -1,0 +1,36 @@
+Input
+-----
+
+/*This programme will show the following conversion of 4 digit number*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter the 4 digit number\n");
+    scanf("%d", &a);
+    int b = a % 10;
+    a /= 10;
+    int c = a % 10;
+    a /= 10;
+    int d = a % 10;
+    a /= 10;
+    int m = a % 10;
+    int n = d * 1000 + m * 100 + b * 10 + c;
+    printf("The modified number is %d", n);
+    
+    return 0;
+}
+---------------------------------------------------------------------------------------------------
+
+Output
+------
+
+Enter the 4 digit number
+1962
+The modified number is 9126
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+

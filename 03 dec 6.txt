@@ -1,0 +1,33 @@
+/*display in the format
+1
+2 1
+1 2 3
+4 3 2 1*/
+
+#include <stdio.h>
+
+int main()
+{
+    int x,y,n=4;
+    for(int x=1;x<=n;x++)
+    {
+        if(x%2==0)
+        {
+            for(int y=x;y>=1;y--)
+            {
+                printf(" %d ",y);
+            }
+        }
+        else
+        {
+            for(int y=1;y<=x;y++)
+            {
+                printf(" %d ",y);
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+

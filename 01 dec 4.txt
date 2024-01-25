@@ -1,0 +1,21 @@
+/*Display all the numbers in between n and m which are divisible by 3 and 4 and 6*/
+
+#include <stdio.h>
+
+int main()
+{
+    int n,x,a,b;
+    printf("Enter the Lower range: ");
+    scanf("%d", &x);
+    a=x+1;
+    printf("Enter the Upper range: ");
+    scanf("%d", &b);
+    for (a;a<b; a++)
+    {
+        if (a%3==0 && a%4==0 && a%6==0){
+            printf("%d\n",a);
+        }
+    }
+
+    return 0;
+}

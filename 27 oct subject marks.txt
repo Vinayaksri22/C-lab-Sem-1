@@ -1,0 +1,14 @@
+/*This programme will give the details of the marks scored by student in particular subject*/
+#include <stdio.h>
+
+int main()
+{
+    printf("roll no.\tphysics\t\tchemistry\tbiology\n");
+    printf("_______\t\t________\t_________\t_______\t");
+    printf("\n");
+    printf(" 378\t\t 20.5\t\t  40\t         30.2");
+
+    return 0;
+}
+
+

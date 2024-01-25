@@ -1,0 +1,20 @@
+/*Take an integer and display its following bites*/
+
+#include <stdio.h>
+
+int main()
+{
+ long int a;
+ printf("Enter the hexadecimal value\n");
+ scanf("%x", &a);
+ int a9 = (a & 100) >> 8;
+ int a10 = (a & 0x200) >> 9;
+ int a15 = (a & 0x4000) >> 14;
+ int a24 = (a & 0x800000) >> 23;
+ printf("%d\n", a24);
+ printf("%d\n", a9);
+ printf("%d\n", a15);
+ printf("%d\n", a10);
+
+    return 0;
+}

@@ -1,0 +1,21 @@
+/*This program will show the numbers between 1 to 90 which is divisible by 11*/
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("Enter the number:");
+    scanf("%d",&a);
+    
+    if (a>0 && a<90)
+    {
+        if ((a%11)==0)
+        printf("The number is divisble by 11",a);
+    }
+    else 
+    printf("The number is not divisble by 11",a);
+    
+
+    return 0;
+}
+

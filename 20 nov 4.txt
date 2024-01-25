@@ -1,0 +1,73 @@
+/*Take a day, month, year and calculate number of days*/
+
+#include <stdio.h>
+
+int main()
+{
+    int d,m,y,x;
+ int z=0;
+ printf("enter the day - ");
+ scanf("%d",&d);
+ printf("enter the month - ");
+ scanf("%d",&m);
+ printf("enter the year - ");
+ scanf("%d",&y);
+ if(m==1)
+ x=d;
+ else if(m==2)
+ x=31+d;
+ else if(m==3)
+ x=59+d;
+ else if(m==4)
+ x=90+d;
+ else if(m==5)
+ x=120+d;
+ else if(m==6)
+ x=151+d;
+ else if(m==7)
+ x=181+d;
+ else if(m==8)
+ x=212+d;
+ else if(m==9)
+ x=243+d;
+ else if(m==10)
+ x=273+d;
+ else if(m==11)
+ x=304+d;
+ else if(m==12)
+ x=334+d;
+ else{
+ printf("invalid input");
+ z=z+1;}
+ 
+ if(y%100==0)
+ 
+ {
+ if(y%400==0)
+ if(m==2&&d==29)
+ x=x+1;
+ else if(m>=3)
+ x=x+1;
+ else 
+ printf(" ");
+ 
+}
+ else if(y%4==0)
+ 
+{
+ if(m==2&&d==29)
+ x=x+1;
+ else if(m>=3)
+ x=x+1;
+ else 
+ printf(" ");
+ 
+}
+ 
+ 
+ 
+ printf("Number of Days: %d",x);
+
+    return 0;
+}
+

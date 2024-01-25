@@ -1,0 +1,37 @@
+/*This programme will show the character number and do the following*/
+
+#include <stdio.h>
+
+int main()
+{
+ char a,b,c;
+ printf("Enter 3 chars separated by space:\n");
+ scanf("%c%c%c",&a,&b,&c);
+ int a1 = a;
+ int b1 = b;
+ int c1 = c;
+ int p = (a1&0xf0)>>4;
+ int q = (a1&0xf);
+ int r = (b1&0xf0)>>4;
+ int s = (b1&0xf); 
+ int t = (c1&0xf0)>>4;
+ int u = (c1&0xf);
+ int m = (p<<8)+(q<<4)+r;
+ int n = (s<<8)+(t<<4)+u;
+ int o = (p<<20) + (q<<16) + (r<<12) + (s<<8) + (t<<4) + u;
+ 
+ printf("a = %x\n", a1);
+ printf("b = %x\n", b1);
+ printf("c = %x\n", c1);
+ printf("p = %x\n", p);
+ printf("q = %x\n", q);
+ printf("r = %x\n", r);
+ printf("s = %x\n", s);
+ printf("t = %x\n", t);
+ printf("u = %x\n", u);
+ printf("m = %x\n", m);
+ printf("n = %x\n", m);
+ printf("o = %x\n", m);
+
+    return 0;
+}

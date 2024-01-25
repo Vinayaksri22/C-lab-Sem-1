@@ -1,0 +1,15 @@
+/*this programme will show the year month days*/
+#include <stdio.h>
+
+int main()
+{
+    int year=2002;
+    int date=18;
+    int month=06;
+    int conv=12*19+4;
+    double da=conv*30.417;
+    printf("%d\n",conv);
+    printf("%f\n",da);
+
+    return 0;
+}

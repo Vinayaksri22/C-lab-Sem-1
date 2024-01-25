@@ -1,0 +1,13 @@
+/*this programme will show the letters in X format*/
+#include <stdio.h>
+
+int main()
+{
+    printf("abcd\t\txzk\n");
+    printf("   dfk\t\t\b\b\bdfdg\n");
+    printf("\t spl\n");
+    printf("   pqr\t     fdff\n");
+    printf("abcd\t\tghj");
+
+    return 0;
+}

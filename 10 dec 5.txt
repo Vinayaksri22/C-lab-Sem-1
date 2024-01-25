@@ -1,0 +1,52 @@
+/*This programme will show the array of odd and even integers*/
+#include <stdio.h>
+
+int main()
+{
+    int z;
+    
+    printf("Enter array size : ");
+    scanf("%d",&z);
+    int a[z]; 
+    
+    printf("Enter array : ");
+    
+    for(int x=0;x<z;x++)
+     scanf("%d",&a[x]);
+    
+    int i=0,j=0;
+    int even[z/2];
+    int odd[z/2];
+    for(int x=0;x<z;x++)
+    {
+        if(x%2==0)
+        {
+            odd[i]=a[x];
+            i++;
+        }
+        else
+        {
+            even[j]=a[x];
+            j++;
+        }
+    }
+  
+    i--;j--;
+    for(int x=0;x<z;x++)
+    {
+        if(x%2==0)
+        {
+            printf(" %d ",odd[i]);
+            i--;
+        }
+        else
+        {
+            printf(" %d ",even[j]);
+            j--;
+        }
+        
+    }
+
+    return 0;
+}
+

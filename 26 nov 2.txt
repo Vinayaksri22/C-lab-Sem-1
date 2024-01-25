@@ -1,0 +1,21 @@
+/*This programme will show the numbers when upper limit is 5*/
+
+#include <stdio.h>
+
+int main()
+{
+    int no,a=1;
+    printf("Enter upper limit\n");
+    scanf("%d",&no);
+    int n1 =no;
+    while(a<=no)
+    {
+        printf("%d ",a);
+        printf("%d ",n1);
+        a++;
+        n1--;
+    }
+    
+    return 0;
+}
+

@@ -1,0 +1,18 @@
+/*Take an integer and shift the position*/
+
+#include <stdio.h>
+
+int main()
+{
+ int a;
+ printf("Enter no. ");
+ scanf("%x", &a);
+ int b= (a & 0xFF000000);
+ int c= (a & 0x00FF0000)>>8;
+ int d= (a & 0x0000FF00)<<8;
+ int e= (a & 0x000000FF);
+ int f= b|c|d|e;
+ printf("New no. %x", f);
+ 
+ return 0;
+}

@@ -1,0 +1,31 @@
+/*This programme will give the escape characters*/
+#include <stdio.h>
+
+int main()
+{
+    ("new line character\n");
+    
+    printf("abc\npqr");
+    
+    
+    ("carriage return\r");
+    
+    printf("abc\rpq");
+    
+    
+    ("vertical tab\v");
+    
+    printf("abc\vpq");
+    
+    
+    ("horizontal tab\t");
+    
+    printf("abc\tpq");
+    
+    
+    ("backspace\b");
+    
+    printf("abcd\b\bp");
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+/*This programme will show the summation of even numbers*/
+
+#include <stdio.h>
+
+int main()
+{
+    int no,n1; float a,s;
+    printf("Enter even upper limit \n");
+    scanf("%d",&no);
+    a=2;
+    n1=2;
+    while(a<=no)
+    {
+        s=s+(((a-1)/a) +((a+1)/a));
+        printf(" %d/%d + %d/%d +",n1-1,n1,n1+1,n1);
+        a=a+2;
+        n1=n1+2;
+    }
+    printf("\b = %f",s);
+
+    return 0;
+}
+
